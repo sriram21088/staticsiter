@@ -1,9 +1,12 @@
 <script setup>
 import { ref } from "vue";
+import Droppable from "./Droppable.vue";
+
 let toggleState = ref(false);
 function componentDropperHandler() {
   toggleState.value = !toggleState.value;
 }
+
 </script>
 
 <template>
@@ -13,7 +16,7 @@ function componentDropperHandler() {
       :class="{ expanded: toggleState }"
       v-on:click="componentDropperHandler"
     >
-       all droppable component go here...
+    <Droppable/>
     </div>
     <div id="layout" :class="{ componentDropperCollapsed: !toggleState }">
       layout

@@ -1,6 +1,7 @@
 
 <script>
-import Platform from './components/Platform.vue'
+import Platform from './components/Platform.vue';
+
 
 export default {
   name: 'App',
